@@ -1,0 +1,11 @@
+create table customer_dtl
+(
+cust_no varchar2(6) references customer_mst(cust_no),
+bill_mon varchar2(3),
+prev_read number(5),
+curr_read number(5),
+unit_read number(5,2) check(unit_read >0),
+due_date date
+);
+
+insert into customer_dtl values('ana001','nov',1234,2545,5.50,'26-dec-05');

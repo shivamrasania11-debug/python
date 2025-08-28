@@ -1,0 +1,20 @@
+create table emp
+(
+empno number(4) primary key,
+ename varchar2(10),
+job varchar2(9),
+mgr number(4),
+hiredate date,
+sal number(7,2),
+comm number(7,2),
+deptno number(2) references dept(deptno)
+);
+
+
+insert into emp values(7369,'smith','clerk',7902,'17-dec-80',800,null,20);
+
+insert into emp values(7499,'allen','salesman',7698,'20-feb-81',1600,300,30);
+
+insert into emp values(7521,'ward','salesman',7698,'22-feb-81',1250,500,30);
+
+

@@ -1,0 +1,11 @@
+create table customer_mst
+(
+cust_no varchar2(6) primary key,
+cust_name varchar2(15) not null,
+address varchar2(20),
+city varchar2(10) check(city in('anand','v v nagar','bakrol')),
+constraint customerno check(cust_no like 'ana%' or cust_no like 'vvn%' or cust_no like 'bak%')
+);
+
+
+insert into customer_mst values('ana001','alan','undi sheri','anand');

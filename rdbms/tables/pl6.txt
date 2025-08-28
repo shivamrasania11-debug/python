@@ -1,0 +1,15 @@
+declare
+str varchar2(10):='&str';
+rev varchar2(10);
+len varchar2(20);
+begin
+len:=length(str);
+loop
+	rev:=rev||substr(str,len,1);
+	len:=len-1;
+	exit when len=0;
+end loop;
+dbms_output.put_line('original string:'||str);
+dbms_output.put_line('reverse string:'||rev);
+
+end;

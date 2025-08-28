@@ -1,0 +1,14 @@
+create table dept
+(
+deptno number(2) primary key,
+dname varchar2(14),
+loc varchar2(13)
+);
+
+insert into dept values(10,'accounting','new york');
+
+insert into dept values(20,'research','dallas');
+
+insert into dept values(30,'sales','chicago');
+
+insert into dept values(40,'operations','boston');

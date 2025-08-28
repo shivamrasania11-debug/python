@@ -1,0 +1,8 @@
+declare
+i number:=1;
+n number:=10;
+begin
+for x in i..n loop
+	dbms_output.put_line(x);
+end loop;
+end;

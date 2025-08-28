@@ -1,0 +1,17 @@
+declare
+a number(10):=&a;
+b number(10):=&b;
+c number(10):=0;
+begin
+c:=a+b;
+dbms_output.put_line('addition'||c);
+
+c:=a-b;
+dbms_output.put_line('subtraction'||c);
+
+c:=a*b;
+dbms_output.put_line('multiplication'||c);
+
+c:=a/b;
+dbms_output.put_line('division'||c);
+end;

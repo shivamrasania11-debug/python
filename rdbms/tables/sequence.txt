@@ -1,0 +1,21 @@
+create table student4
+(
+std_no number(5),
+std_name varchar2(10),
+address varchar2(10)
+);
+
+
+create sequence seq1
+increment by 1
+start with 1
+minvalue 1
+maxvalue 99
+cycle;
+
+insert into student4
+values(seq1.nextval,'shivam','ahwhsja');
+insert into student4
+values(seq1.nextval,'manav','gam');
+insert into student4
+values(seq1.nextval,'vam','ram');
